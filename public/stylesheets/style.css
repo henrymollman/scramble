@@ -23,7 +23,7 @@ a {
 }
 .cover-container {
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto; 
 }
 
 /* Padding for spacing */
@@ -34,14 +34,28 @@ a {
 .mainpage {
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 
 .textarea {
   position: relative;
   text-align: center;
+  vertical-align: center; 
+  top: 300px;
 }
 
 .wordnik {
   position: relative;
-  top: 700px;
+  top: 600px;
+}
+
+.letter {
+  height: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  width: 100px;
+  display: inline-block;
+  background: #000000;
+  margin: 0 5px;
+  font-size: 75px;
 }
