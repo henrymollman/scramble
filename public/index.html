@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="scramble">
+<head>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="stylesheets/style.css">
+
+<style>
+
+
+
+</style>
+
+<script src="./lib/angular.min.js"></script>
+<script src="./lib/angular-ui-router.min.js"></script>
+
+<script>
+
+
+</script>
+</head>
+
+
+
+<body ng-controller="MainCtrl as main" ng-keyup="main.keyPress($event.keyCode)">
+
+<div class="site-wrapper">
+
+<div ui-view class="site-wrapper-inner"></div>
+
+
+</div>
+
+<script type="text/javascript" src="app/scramble.js"></script>
+<script type="text/javascript" src="app/services/wordFactory.js"></script>
+<script type="text/javascript" src="app/main/mainctrl.js"></script>
+<script type="text/javascript" src="app/words/wordsctrl.js"></script>
+
+
+</body>
+</html> 
