@@ -47,7 +47,7 @@ angular.module('scramble')
         }
         else {
           result = false;
-          wordnik = originalWord.split('').toUpperCase();
+          wordnik = originalWord.toUpperCase().split('');
           wordBroadcast(wordnik);
           fail();
         }
