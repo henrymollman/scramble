@@ -1,7 +1,7 @@
 angular.module('scramble')
   .factory('WordFactory', function($http, $rootScope) {
-    var wordURL = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&excludePartOfSpeech=proper-noun&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=8&api_key=f8de9c37abe50fa5b1008000f7d0af42eca8c8c633958489a";
 
+    var wordURL = "https://api.wordnik.com/v4/words.json/randomWord?hasDictionaryDef=true&excludePartOfSpeech=proper-noun&minCorpusCount=0&maxCorpusCount=-1&minDictionaryCount=1&maxDictionaryCount=-1&minLength=5&maxLength=8&api_key=" + process.env.apiKey;
 
       var wordnik = "WELCOME".split('');
       var originalWord = "";
